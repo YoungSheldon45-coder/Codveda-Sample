@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  h1, h2, h3 {
+    color: #00b3b3;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10%;
+  }
+  
+  img {
+    width: 40%;
+    max-width: 60%;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+  }
+  
+  .links p {
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1a2a3a;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) { 
+    nav {
+        flex-direction: column; 
+        padding: 15px; 
+        text-align: center; 
+    }
+
+    .logo {
+        margin-bottom: 20px; 
+    }
+
+    .links {
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    .links p {
+        margin: 10px 0; 
+    }
+}
+
+  header {
+    background-color: #1a2a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .content > div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px;
+    background: #1a2a3a;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .content > div:hover {
+    transform: translateY(-10px);
+  }
+
+  .content h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #00b3b3;
+  }
+
+  .content p {
+    font-size: 14px;
+    color: #bbb;
+  }
+
+  .footer {
+    background-color: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    color: #bbb;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #00b3b3;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    .content > div {
+      max-width: 100%;
+    }
+  }
